@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shapebackground"
+              android:weightSum="1">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@color/BackColorTopTitleLayout"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:padding="60dp"
+                    android:id="@+id/imgButtonBoxNew"
+                    android:background="@color/BackColorButtonImageTitleLayout"
+                    android:layout_gravity="right" android:src="@drawable/dollar_symbol"
+                    android:layout_alignParentRight="true"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingRight="10dp"
+                      android:gravity="center"
+                      android:text="@string/BoxInfoTitle"  android:textColor="@color/WhiteColor" android:textSize="17dp"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_centerVertical="true" android:layout_toLeftOf="@+id/imgButtonBoxNew"/>
+            <ImageButton
+                    android:id="@+id/imgBtnBack"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:gravity="center"
+                    android:src="@drawable/previous"
+                    android:background="@color/BackColorTopTitleLayout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblBoxCodePoint"
+                              android:id="@+id/lblBoxCode" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblBoxCodeValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblBoxCode" android:layout_alignTop="@+id/lblBoxCode"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblLocationTypePoint"
+                              android:id="@+id/lblLocationType" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblLocationTypeValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblLocationType" android:layout_alignTop="@+id/lblLocationType"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblTransfereePoint"
+                              android:id="@+id/lblTransferee" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblTransfereeValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblTransferee" android:layout_alignTop="@+id/lblTransferee"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblHomeTelPoint"
+                              android:id="@+id/lblHomeTel" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblHomeTelValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblHomeTel" android:layout_alignTop="@+id/lblHomeTel"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_marginRight="5dp"
+                              android:text="@string/lblMobilePoint"
+                              android:id="@+id/lblMobile"
+                              style="@style/BackTextViewInfoTheme"
+                              android:layout_toLeftOf="@+id/lblHomeTelValue" android:layout_alignTop="@+id/lblHomeTel"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblMobileValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblMobile" android:layout_alignTop="@+id/lblHomeTel"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_marginRight="5dp"
+                              android:text="@string/lblWorkTelPoint"
+                              android:id="@+id/lblWorkTel"
+                              style="@style/BackTextViewInfoTheme"
+                              android:layout_toLeftOf="@+id/lblMobileValue" android:layout_alignTop="@+id/lblHomeTel"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblWorkTelValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblWorkTel" android:layout_alignTop="@+id/lblHomeTel"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblMobilePoint"
+                              android:id="@+id/lblMobile" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblMobileValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblMobile" android:layout_alignTop="@+id/lblMobile"/>
+                </RelativeLayout>
+            </LinearLayout>-->
+
+            <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblWorkTelPoint"
+                              android:id="@+id/lblWorkTel" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblWorkTelValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblWorkTel" android:layout_alignTop="@+id/lblWorkTel"/>
+                </RelativeLayout>
+            </LinearLayout>-->
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblPOBOXPoint"
+                              android:id="@+id/lblPOBOX" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblPOBOXValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblPOBOX" android:layout_alignTop="@+id/lblPOBOX"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lbljobPoint"
+                              android:id="@+id/lbljob" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lbljobValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lbljob" android:layout_alignTop="@+id/lbljob"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblLocationPoint"
+                              android:id="@+id/lblLocation" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblLocationValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblLocation" android:layout_alignTop="@+id/lblLocation"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblAreaPoint"
+                              android:id="@+id/lblArea" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblAreaValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblArea" android:layout_alignTop="@+id/lblArea"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblMainStreetPoint"
+                              android:id="@+id/lblMainStreet" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblMainStreetValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblMainStreet" android:layout_alignTop="@+id/lblMainStreet"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblByStreetPoint"
+                              android:id="@+id/lblByStreet" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblByStreetValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblByStreet" android:layout_alignTop="@+id/lblByStreet"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblstreet3Point"
+                              android:id="@+id/lblstreet3" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblstreet3Value"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblstreet3" android:layout_alignTop="@+id/lblstreet3"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblAlleyPoint"
+                              android:id="@+id/lblAlley" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblAlleyValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblAlley" android:layout_alignTop="@+id/lblAlley"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblImpassePoint"
+                              android:id="@+id/lblImpasse" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblImpasseValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblImpasse" android:layout_alignTop="@+id/lblImpasse"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblalley3Point"
+                              android:id="@+id/lblalley3" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblalley3Value"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblalley3" android:layout_alignTop="@+id/lblalley3"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblPlaqueNoPoint"
+                              android:id="@+id/lblPlaqueNo" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblPlaqueNoValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblPlaqueNo" android:layout_alignTop="@+id/lblPlaqueNo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblFloorPoint"
+                              android:id="@+id/lblFloor"
+                              android:layout_marginRight="5dp"
+                              style="@style/BackTextViewInfoTheme"
+                              android:layout_toLeftOf="@+id/lblPlaqueNoValue" android:layout_alignTop="@+id/lblPlaqueNo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblFloorValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblFloor" android:layout_alignTop="@+id/lblPlaqueNo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_marginRight="5dp"
+                              android:text="@string/lblUnitNoPoint"
+                              android:id="@+id/lblUnitNo"
+
+                              style="@style/BackTextViewInfoTheme"
+                              android:layout_toLeftOf="@+id/lblFloorValue" android:layout_alignTop="@+id/lblPlaqueNo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblUnitNoValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblUnitNo" android:layout_alignTop="@+id/lblPlaqueNo"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblFloorPoint"
+                              android:id="@+id/lblFloor" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblFloorValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblFloor" android:layout_alignTop="@+id/lblFloor"/>
+
+                </RelativeLayout>
+            </LinearLayout>-->
+
+           <!-- <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblUnitNoPoint"
+                              android:id="@+id/lblUnitNo" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblUnitNoValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblUnitNo" android:layout_alignTop="@+id/lblUnitNo"/>
+                </RelativeLayout>
+            </LinearLayout>-->
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_1"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblDescrPoint2"
+                              android:id="@+id/lblDescr" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblDescrValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblDescr" android:layout_alignTop="@+id/lblDescr"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/glass_back_2"
+                    android:layout_height="50dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center|right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                              android:text="@string/lblAddressNotePoint"
+                              android:id="@+id/lblAddressNote" android:layout_alignParentTop="true"
+                              android:layout_alignParentRight="true"
+                              style="@style/BackTextViewInfoTheme"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Value"
+                              android:layout_marginRight="5dp"
+                              android:id="@+id/lblAddressNoteValue"
+                              style="@style/BackTextViewInfoValueTheme"
+                              android:layout_toLeftOf="@+id/lblAddressNote" android:layout_alignTop="@+id/lblAddressNote"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

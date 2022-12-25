@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shapebackground"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@color/BackColorTopTitleLayout"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingRight="10dp"
+                      android:gravity="center"
+                      android:text="@string/SettingTitle"  android:textColor="@color/WhiteColor" android:textSize="17dp"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+            <ImageButton
+                    android:id="@+id/imgBtnBack"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:gravity="center"
+                    android:src="@drawable/previous"
+                    android:background="@color/BackColorTopTitleLayout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/MenuTextColor"
+            android:text="@string/lblUserPass"
+            android:id="@+id/lblUserPass"
+            />
+    <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+
+            android:id="@+id/txtUserPass" android:layout_gravity="center_horizontal"
+            style="@style/TextBoxTheme"/>
+
+
+
+        <RadioGroup
+                android:id="@+id/radioPrinterGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="BIXOLON Printer"
+                android:tag="1"
+                android:checked="true"
+                android:visibility="invisible"
+                android:id="@+id/radioBIXOLON"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="RONGTA Printer"
+                android:visibility="invisible"
+                android:tag="0"
+                android:id="@+id/radioRONGTA"/>
+        </RadioGroup>
+
+    <Button android:layout_width="140dp" android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@color/MenuTextColor" android:text="@string/btnLogin"
+            android:background="@drawable/shapebutton" android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"/>
+    <Button android:layout_width="140dp" android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/MenuTextColor" android:text="@string/btnExportDB"
+            android:background="@drawable/shapebutton" android:id="@+id/btnExportDB"
+            android:layout_gravity="center_horizontal" android:visibility="invisible"/>
+
+    <Button android:layout_width="140dp" android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/MenuTextColor" android:text="@string/btnImportDB"
+            android:background="@drawable/shapebutton" android:id="@+id/btnImportDB"
+            android:layout_gravity="center_horizontal" android:visibility="invisible"/>
+</LinearLayout>

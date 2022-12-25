@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">خیریه امام علی(ع)</string>
+    <string name="LoginTitle">ورود</string>
+    <string name="lblUserName">نام کاربری</string>
+    <string name="lblUserPass">رمز عبور</string>
+    <string name="btnLogin">ورود</string>
+    <string name="chkRemember">بخاطر آوردن</string>
+    <string name="textUrl">http://192.168.1.2/</string>
+    <string name="wait">لطفا صبر کنید</string>
+    <string name="noLogin">نام کاربری یا رمز عبور اشتباه هست!</string>
+    <string name="btnLogout">خروج</string>
+    <string name="BoxNewTitle">صندوق جدید</string>
+    <string name="SendOffline">ارسال</string>
+    <string name="ReceiveOffline">دریافت</string>
+    <string name="lblBoxCode">کد صندوق</string>
+    <string name="BoxDichargeItemTitle">تخلیه صندوق</string>
+    <string name="btnPrevious"><![CDATA[<]]></string>
+    <string name="btnNext"><![CDATA[>]]></string>
+    <string name="lblStatus">وضعیت:</string>
+    <string name="lblSarfasl">سرفصل</string>
+    <string name="lblFishNo">فیش</string>
+    <string name="lblVahedRial">ریال</string>
+    <string name="lblPaperPrice">اسکناس</string>
+    <string name="lblPiecePrice">سکه</string>
+    <string name="btnSavePrint">ذخیره و چاپ</string>
+    <string name="btnSave">ذخیره</string>
+    <string name="NotFound">پیدا نشد</string>
+    <string name="SuccessInserted">با موفقیت ثبت گردید</string>
+    <string name="MissionTitle">ماموریت</string>
+    <string name="MissionNumber">شماره ماموریت:</string>
+    <string name="lblLocation">مسیر</string>
+    <string name="Show">نمایش</string>
+    <string name="BoxReportTitle">ثبت گزارش</string>
+    <string name="BoxReport">ثبت گزارش</string>
+    <string name="btnMissionFinish">اتمام ماموریت</string>
+    <string name="lblLocationType">نوع مکان</string>
+    <string name="lblTransferee">تحویل گیرنده</string>
+    <string name="lblTransfereePoint">تحویل گیرنده:</string>
+    <string name="lblHomeTel">تلفن</string>
+    <string name="lblMobile">تلفن همراه</string>
+    <string name="lblWorkTel">تلفن محل کار</string>
+    <string name="lblPOBOX">کد پستی</string>
+    <string name="lbljob">شغل</string>
+    <string name="lblArea">محله</string>
+    <string name="lblMainStreet">خیابان1</string>
+    <string name="lblByStreet">خیابان 2</string>
+    <string name="lblstreet3">خیابان 3</string>
+    <string name="lblAlley">کوچه 1</string>
+    <string name="lblImpasse">کوچه 2</string>
+    <string name="lblalley3">کوچه 3</string>
+    <string name="lblPlaqueNo">پلاک</string>
+    <string name="lblFloor">طبقه</string>
+    <string name="lblUnitNo">واحد</string>
+    <string name="lblDescr">توضیحات</string>
+    <string name="lblDescrPoint">آدرس:</string>
+    <string name="lblAddressNote">توضیحات آدرس</string>
+    <string name="FailedInserted">در ثبت اطلاعات مشکل وجود دارد</string>
+    <string name="PleaseBoxCode">لطفا کد صندوق وارد کنید</string>
+    <string name="BoxEditTitle">ویرایش صندوق</string>
+    <string name="BoxMovementTitle">جابجایی صندوق</string>
+    <string name="NoSearch">لطفا شماره صندوق جستجو شود</string>
+    <string name="lblLevel">نوع:</string>
+    <string name="NotFoundBox">کد صندوق پیدا نشد</string>
+    <string name="BoxInfoTitle">اطلاعات صندوق</string>
+    <string name="btnReturn">بازگشت</string>
+    <string name="NoInternetConnectionTitle">ارتباط برقرار نیست</string>
+    <string name="NoInternetConnectionBody">به نظر می رسد ارتباط اینترنت و وای فای شما قطع است.لطفا عوض کنید و دوباره
+        امتحان کنید.
+    </string>
+    <string name="ReceiveDataSuccess">اطلاعات دریافت شد</string>
+    <string name="ReceiveDataFailed">در یافت اطلاعات مشکل وجود دارد</string>
+    <string name="ErrorServer">ارتباط با سرور دچار مشکل شد</string>
+    <string name="ErrorNetwork">مشکل در ارتباط شبکه</string>
+    <string name="ErrorParseJson">اطلاعات دریافتی صحیح نمی باشد</string>
+    <string name="SendDataSuccess">اطلاعات ارسال شد</string>
+    <string name="GPSONPlease">لطفا GPS روشن کنید</string>
+    <string name="NoGPSON">GPS روشن نیست</string>
+    <string name="FinishMissionTitle">پایان ماموریت</string>
+    <string name="FinishMissionBody">با اتمام ماموریت ابتدا اطلاعات ارسال گردیده و سپس پاک می گردد. \n آیا از حذف اطلاعات مطمئن هستید؟ </string>
+    <string name="SuccessFinishMission">ااطلاعات ارسال و ماموریت به اتمام رسید</string>
+    <string name="YES">بله</string>
+    <string name="No">خیر</string>
+    <string name="ErrorBadGateway">در ثبت اطلاعات مشکل وجود دارد</string>
+    <string name="SettingTitle">تنظیمات</string>
+    <string name="mainmenutitle">منوی اصلی</string>
+    <string name="lblMainStreetPoint">آدرس:</string>
+    <string name="lblLocationTypePoint">نوع مکان : </string>
+    <string name="lblHomeTelPoint">تلفن:</string>
+    <string name="lblMobilePoint">تلفن همراه:</string>
+    <string name="lblWorkTelPoint">تلفن محل کار:</string>
+    <string name="lblPOBOXPoint">کد پستی:</string>
+    <string name="lbljobPoint">شغل:</string>
+    <string name="lblLocationPoint">مسیر:</string>
+    <string name="lblAreaPoint">محله:</string>
+    <string name="lblByStreetPoint">خیابان 2:</string>
+    <string name="lblstreet3Point">خیابان 3:</string>
+    <string name="lblAlleyPoint">کوچه 1:</string>
+    <string name="lblImpassePoint">کوچه 2:</string>
+    <string name="lblalley3Point">کوچه 3:</string>
+    <string name="lblPlaqueNoPoint">پلاک:</string>
+    <string name="lblFloorPoint">طبقه:</string>
+    <string name="lblUnitNoPoint">واحد:</string>
+    <string name="lblDescrPoint2">توضیحات:</string>
+    <string name="lblAddressNotePoint">توضیحات آدرس:</string>
+    <string name="lblBoxCodePoint">کد صندوق : </string>
+    <string name="new_printer">اتصال پرینتر</string>
+    <string name="print">گزارش</string>
+    <string name="connecting">اتصال به پرینتر با بلوتوٍث</string>
+    <string name="switch_on_printer">مطمئن هستید پرینتر روشن هست.اگر مطمئن هستید لطفا دوباره پرینتر خاموش و روشن کنید.
+    </string>
+    <string name="non_paired_printers1">پرینتر وجود ندارد.</string>
+    <string name="non_paired_printers2">لطفا پرینتر روشن کنید و دکمه اتصال به پرینتر را بزنید.پین پرینتر عدد 0000 می
+        باشد.
+    </string>
+    <string name="printer_ready1">پرینتر آماده هست</string>
+    <string name="printer_ready2">جهت گرفتن گزارش روی دکمه گزارش کلیک کنید</string>
+    <string name="BoxDichargeItemReportTitle">گزارش تخلیه صندوق</string>
+
+
+
+
+
+    <string name="reyCity">شهر ری</string>
+    <string name="PrintBoxCode">شماره صندوق:</string>
+    <string name="PrintSarFasl">سرفصل</string>
+    <string name="PrintPiecePrice">مبلغ سکه</string>
+    <string name="PrintPaperPrice">مبلغ اسکناس</string>
+    <string name="PrintUnitMoney">ریال</string>
+    <string name="PrintSumPrice">مبلغ کل</string>
+    <string name="PrintFishNo">شماره فیش:</string>
+    <string name="PrintMission1">مامور 1</string>
+    <string name="PrintMission2">مامور 2</string>
+    <string name="PrintDate">تاریخ:</string>
+    <string name="PrintTime">ساعت:</string>
+    <string name="PrintTransfree">تحویل گیرنده:</string>
+    <string name="NoMission">اطلاعات جدید دریافت نشد.\n احتمالا ماموریتی به تاریخ امروز برای شما تعریف نشده است.
+    </string>
+    <string name="btnExportDB">خروجی دیتابیس</string>
+    <string name="btnImportDB">ایمپورت دیتابیس</string>
+    <string name="lblVersion">نسخه:1.7(www.sadraafzar.com)</string>
+    <string name="UpdateApp">اپلیکیشن احتیاج به بروز رسانی دارد.</string>
+
+    <string name="none_paired">هیچ دستگاه جفت نشده است</string>
+    <string name="scanning">اسکن برای دستگاه ها ...</string>
+    <string name="select_device">یک دستگاه برای اتصال انتخاب کنید</string>
+    <string name="none_found">هیچ دستگاهی یافت نشد</string>
+    <string name="title_other_devices">سایر دستگاه های موجود</string>
+    <string name="title_paired_devices">دستگاه های متصل شده</string>
+    <string name="button_scan">اسکن برای دستگاه ها</string>
+    <string name="title_connected_to">متصل:</string>
+    <string name="title_connecting">در حال اتصال ...</string>
+    <string name="title_not_connected">متصل نیست</string>
+    <string name="lblDescription">توضیح:</string>
+    <string name="PrintDescription">توضیح:</string>
+    <string name="NoEdit">امکان ویرایش وجود ندارد</string>
+
+
+</resources>

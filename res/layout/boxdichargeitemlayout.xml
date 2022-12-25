@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shapebackground"
+              android:weightSum="1">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@color/BackColorTopTitleLayout"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:padding="60dp"
+                    android:id="@+id/imgButtonBoxNew"
+                    android:background="@color/BackColorButtonImageTitleLayout"
+                    android:layout_gravity="right" android:src="@drawable/mainpage_delsafe_iocn"
+                    android:layout_alignParentRight="true"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingRight="10dp"
+                      android:gravity="center"
+                      android:text="@string/BoxDichargeItemTitle"  android:textColor="@color/WhiteColor" android:textSize="17dp"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_centerVertical="true" android:layout_toLeftOf="@+id/imgButtonBoxNew"/>
+            <ImageButton
+                    android:id="@+id/imgBtnBack"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:gravity="center"
+                    android:src="@drawable/previous"
+                    android:background="@color/BackColorTopTitleLayout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+
+            >
+        <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnBoxReportShow" android:src="@drawable/mainpage_report_icon"/>
+        <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnBoxMovementShow" android:src="@drawable/mainpage_movesafe_icon"/>
+        <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnBoxEditShow" android:src="@drawable/mainpage_editsafe_icon"/>
+        <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnInfo" android:src="@drawable/dollar_symbol"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp">
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                >
+
+            <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:id="@+id/imgSetBoxCode"
+                    android:src="@drawable/safe_lock"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"/>
+            <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="@string/btnPrevious"
+                    android:id="@+id/btnPrevious"
+                    android:textColor="@color/MenuTextColor"
+
+                    android:background="@null"
+                    android:src="@drawable/left_arrow_hover"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentTop="true" android:layout_toRightOf="@+id/imgSetBoxCode"/>
+            <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/btnNext"
+                    android:id="@+id/btnNext"
+                    android:textColor="@color/MenuTextColor"
+                    android:background="@null"
+                    android:src="@drawable/right_arrow_hover"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/lblBoxCode"
+                    android:id="@+id/txtBoxCode"
+                    style="@style/TextBoxCodeTheme"
+                    android:imeOptions="actionDone"
+                    android:layout_toRightOf="@+id/btnPrevious"
+                    android:layout_toLeftOf="@id/btnNext"
+                    />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_height="25dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/TextViewStatusBackColor"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                      android:text="@string/lblTransfereePoint"
+                      android:id="@+id/lblTransferee" android:layout_alignParentTop="true"
+                      android:layout_alignParentRight="true"
+                      style="@style/BackTextViewStatusTheme"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Value"
+                      android:id="@+id/lblTransfereeValue"
+                      style="@style/BackTextViewStatusValueTheme"
+                      android:layout_toLeftOf="@+id/lblTransferee" android:layout_alignTop="@+id/lblTransferee"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="25dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:background="@color/TextViewStatusBackColor"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                      android:text="@string/lblStatus"
+                      android:id="@+id/lblStatus" android:layout_alignParentTop="true"
+                      android:layout_alignParentRight="true"
+                      style="@style/BackTextViewStatusTheme"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Value"
+                      android:id="@+id/lblStatusValue"
+                      style="@style/BackTextViewStatusValueTheme"
+                      android:layout_toLeftOf="@+id/lblStatus" android:layout_alignTop="@+id/lblStatus"/>
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+                android:background="@color/TextViewStatusBackColor"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                      android:text="@string/lblDescrPoint"
+                      android:id="@+id/lblDescr" android:layout_alignParentTop="true"
+                      android:layout_alignParentRight="true"
+                      style="@style/BackTextViewStatusTheme"/>-->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Description"
+                      android:id="@+id/lblDescrValue"
+                      android:inputType="textMultiLine"
+                      style="@style/BackTextViewStatusValueTheme"
+                      android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            >
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+
+                  android:text="@string/lblSarfasl"
+                  android:id="@+id/lblSarfasl" android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true"
+                  style="@style/BackTextViewInfoTheme"/>
+
+        <Spinner
+
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:id="@+id/spinner"
+                style="@style/SpinnerTheme"
+                android:layout_toLeftOf="@+id/lblSarfasl" android:layout_alignTop="@+id/lblSarfasl"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            >
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+
+                  android:text="@string/lblFishNo"
+                  android:id="@+id/lblFishNo" android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true"
+                  style="@style/BackTextViewInfoTheme"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/txtFishNo"
+
+                style="@style/TextBoxThemeNumber"
+                android:layout_toLeftOf="@+id/lblFishNo" android:layout_alignTop="@+id/lblFishNo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        >
+    <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+
+              android:text="@string/lblPaperPrice"
+              android:id="@+id/lblPaperPrice" android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              style="@style/BackTextViewInfoTheme"/>
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/txtPaperPrice"
+
+            style="@style/TextBoxThemeNumber"
+            android:layout_toLeftOf="@+id/lblPaperPrice" android:layout_alignTop="@+id/lblPaperPrice"/>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            >
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+
+                  android:text="@string/lblPiecePrice"
+                  android:id="@+id/lblPiecePrice" android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true"
+                  style="@style/BackTextViewInfoTheme"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/txtPiecePrice"
+
+                style="@style/TextBoxThemeNumber"
+                android:layout_toLeftOf="@+id/lblPiecePrice" android:layout_alignTop="@+id/lblPiecePrice"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            >
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+
+                  android:text="@string/lblDescription"
+                  android:id="@+id/lblDescription" android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true"
+                  style="@style/BackTextViewInfoTheme"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/txtDescription"
+
+                style="@style/TextBoxTheme"
+                android:layout_toLeftOf="@+id/lblDescription" android:layout_alignTop="@+id/lblDescription"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/btnSave"
+                android:id="@+id/btnSave"
+                android:textColor="@color/TextBoxFontColor"
+                android:background="@drawable/shapebutton"
+                />
+
+        <Button
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/btnSavePrint"
+                android:id="@+id/btnSavePrint"
+                android:textColor="@color/TextBoxFontColor"
+                android:background="@drawable/shapebutton"
+                />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="SpinnerMissionTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_mssion_bg</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="TextBoxCodeTheme" parent="android:Widget.EditText">
+       <item name="android:background">@drawable/shapetextboxcode</item>
+       <item name="android:textColor">@color/TextBoxCodeFontColor</item>
+       <item name="android:textColorHint">@color/TextBoxCodeFontColor</item>
+       <item name="android:layout_gravity">center_horizontal</item>
+       <item name="android:imeOptions">actionNext</item>
+       <item name="android:inputType">number</item>
+       <item name="android:textSize">16dp</item>
+    </style>
+    <style name="TextBoxTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/shapetextbox</item>
+        <item name="android:textColor">@color/TextBoxFontColor</item>
+        <item name="android:textColorHint">@color/TextBoxFontColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="TextBoxThemeNumber" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/shapetextbox</item>
+        <item name="android:textColor">@color/TextBoxFontColor</item>
+        <item name="android:textColorHint">@color/TextBoxFontColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="TextBoxThemeMultiLine" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/shapetextbox</item>
+        <item name="android:textColor">@color/TextBoxFontColor</item>
+        <item name="android:textColorHint">@color/TextBoxFontColor</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="BackTextViewStatusTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewStatusFontColor</item>
+        <item name="android:background">@color/TextViewStatusBackColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+    <style name="BackTextViewStatusValueTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewStatusValueFontColor</item>
+        <item name="android:background">@color/TextViewStatusBackColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="BackTextViewMissionTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewStatusFontColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="BackTextViewMissionValueTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewStatusValueFontColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="BackTextViewInfoTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewInfoFontColor</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">5dp</item>
+
+    </style>
+    <style name="BackTextViewInfoValueTheme" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextViewStatusValueFontColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+
+    <style name="LoadingNormal">
+        <item name="android:background">@drawable/spinner_76_outer_holo_color_base</item>
+        <item name="android:layout_width">@dimen/loading</item>
+        <item name="android:layout_height">@dimen/loading</item>
+    </style>
+
+
+
+
+
+    <style name="CustomPopupTheme" parent="@android:style/Widget.PopupMenu">
+        <!-- if using android.widget.PopupMenu -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+
+        <item name="android:textColor">@color/WhiteColor</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="PopupMenu" >
+        <item name="android:popupBackground">@color/ButtonBackColor</item>
+
+    </style>
+
+
+
+
+
+    <color name="TextViewStatusFontColor">#000000</color>
+    <color name="TextViewStatusBackColor">#0cb8aa</color>
+    <color name="TextViewStatusValueFontColor">#ffffff</color>
+    <color name="TextViewInfoFontColor">#004641</color>
+
+</resources>

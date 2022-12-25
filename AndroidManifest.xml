@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="Sadraafzar.com.Charitable"
+          android:versionCode="17"
+          android:versionName="1.7">
+    <uses-sdk android:minSdkVersion="15"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="LoginActivity"
+                  android:label="@string/app_name"  android:theme="@android:style/Theme.NoTitleBar"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:theme="@android:style/Theme.NoTitleBar"  android:screenOrientation="portrait"/>
+        <activity android:name=".BoxNewActivity" android:theme="@android:style/Theme.NoTitleBar"  android:screenOrientation="portrait"/>
+        <activity android:name=".BoxDichargeItemActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".MissionActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".BoxReportActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".BoxEditActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".BoxMovementActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".BoxInfoActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".PrintingActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".PrintRongtaActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".DeviceListActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>

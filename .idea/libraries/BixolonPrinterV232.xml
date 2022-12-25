@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BixolonPrinterV232">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/BixolonPrinterV232.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

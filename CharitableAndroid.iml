@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="UPDATE_PROPERTY_FILES" value="true" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="persiancalendar" level="project" />
+    <orderEntry type="library" name="icu4j_3_2_calendar" level="project" />
+    <orderEntry type="library" name="BixolonPrinterV232" level="project" />
+    <orderEntry type="library" name="gson-2.8.2" level="project" />
+    <orderEntry type="library" name="httpclient-4.5.3" level="project" />
+    <orderEntry type="library" name="RT_Android_Bluetooth_SDK_20150204" level="project" />
+  </component>
+</module>

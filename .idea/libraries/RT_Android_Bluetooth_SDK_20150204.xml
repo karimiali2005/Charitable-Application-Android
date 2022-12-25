@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RT_Android_Bluetooth_SDK_20150204">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/RT_Android_Bluetooth_SDK_20150204.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

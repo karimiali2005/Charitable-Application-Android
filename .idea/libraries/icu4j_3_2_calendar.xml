@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="icu4j_3_2_calendar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/icu4j_3_2_calendar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

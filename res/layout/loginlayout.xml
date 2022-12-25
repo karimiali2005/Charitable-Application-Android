@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:gravity="center">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:weightSum="1"
+                android:background="@color/BackColorTopTitleLayout"
+                >
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+
+
+               <!-- <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:paddingRight="10dp"
+                          android:gravity="center"
+                          android:paddingTop="10dp"
+                          android:text="@string/LoginTitle"  android:textColor="@color/WhiteColor" android:textSize="17dp"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_alignParentRight="true" android:layout_toLeftOf="@+id/imgButtonHome"/>-->
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSetting"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:text="تنظیم"
+                        android:src="@drawable/mainpage_wifisetting_icon"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:weightSum="1"
+                android:background="@color/BackColorBottomTitleLayout"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/MenuTextColor"
+                    android:padding="5dp"
+                    android:textSize="17dp"
+                    android:text="@string/lblVersion"
+
+                    />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@id/header"
+            android:gravity="center">
+        <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shapebackground"
+                android:weightSum="1">
+            <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/imageView" android:src="@drawable/lock_icon"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapeedittext"
+                    android:textColor="@color/TextFontColor"
+                    android:id="@+id/txtUsername" android:layout_gravity="center_horizontal"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/lblUserName"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textSize="13dp"
+                    />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/shapeedittext"
+                    android:textColor="@color/TextFontColor"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/lblUserPass"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:id="@+id/txtUserPass" android:layout_gravity="center_horizontal"/>
+            <CheckBox
+
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/MenuTextColor"
+                    android:textSize="13dp"
+                    android:text="@string/chkRemember"
+                    android:id="@+id/chkRemember" android:layout_gravity="center_horizontal"
+                    android:singleLine="false" android:layout_centerVertical="true"/>
+            <Button android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:textColor="@color/ButtonTextColor" android:text="@string/btnLogin"
+                    android:background="@drawable/shapebuttonlogin" android:id="@+id/btnLogin"
+                    android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

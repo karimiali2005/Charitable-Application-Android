@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shapebackground"
+              android:weightSum="1">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".LoginActivity">
+
+    <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/gapSmall">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/pairPrinter"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+
+                    android:text="@string/new_printer"
+                    android:textColor="@color/TextBoxFontColor"
+                    android:background="@drawable/shapebutton"
+                   />
+
+            <Button
+                    android:id="@+id/print"
+                    android:layout_margin="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+
+                    android:text="@string/print"
+                    android:textColor="@color/TextBoxFontColor"
+                    android:background="@drawable/shapebutton"
+                  />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp"
+                  android:gravity="center" android:weightSum="1" android:background="@color/BackColorTopTitleLayout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:layout_width="60dp" android:layout_height="60dp" android:gravity="center"
+                         android:padding="60dp" android:id="@+id/imageButton"
+                         android:background="@color/BackColorButtonImageTitleLayout" android:layout_gravity="right"
+                         android:src="@drawable/mainpage_delsafe_iocn" android:layout_alignParentRight="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingRight="10dp" android:gravity="center" android:text="@string/BoxDichargeItemReportTitle"
+                      android:textColor="@color/WhiteColor" android:textSize="17dp"
+                      android:layout_gravity="center_horizontal" android:layout_centerVertical="true"
+                      android:layout_toLeftOf="@+id/imageButton"/>
+            <ImageButton android:id="@+id/imgBtnBack" android:layout_width="70dp" android:layout_height="70dp" android:gravity="center"
+                         android:src="@drawable/previous" android:background="@color/BackColorTopTitleLayout"
+                         android:layout_gravity="center_horizontal" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+            <LinearLayout
+                    android:id="@+id/layoutLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/gapLarge"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <View
+                        android:id="@+id/loading"
+                        style="@style/LoadingNormal" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/gapSmall"
+                        android:gravity="center"
+                        android:text="@string/connecting"
+                        android:textSize="@dimen/textSizeSmall"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="@string/switch_on_printer"
+                        android:textSize="@dimen/textSizeMicro" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/layoutNoExisteImpresora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/gapLarge"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_cancel" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/gapSmall"
+                        android:gravity="center"
+                        android:text="@string/non_paired_printers1"
+                        android:textSize="@dimen/textSizeSmall"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="@string/non_paired_printers2"
+                        android:textSize="@dimen/textSizeMicro"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/layoutImpresoraPreparada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/gapLarge"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_print" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/gapSmall"
+                        android:gravity="center"
+                        android:text="@string/printer_ready1"
+                        style="@style/BackTextViewInfoValueTheme" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="@string/printer_ready2"
+                        style="@style/BackTextViewInfoValueTheme" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/debug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/formLayout"
+            android:layout_marginBottom="@dimen/gapMedium"
+            android:gravity="center"
+            android:text="Bluetooth Connection Data"
+            android:textColor="#F00"
+            android:textSize="@dimen/textSizeMicro"
+            android:visibility="gone" />
+
+
+    <ImageView
+            android:id="@+id/testImageToPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+</RelativeLayout>
+    </LinearLayout>
